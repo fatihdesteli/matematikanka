@@ -24,3 +24,29 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Admin panel için özel stiller */
+.admin-panel, 
+[class*="admin/dashboard"],
+[class*="admin/curriculum"],
+[class*="admin/content-creator"] {
+  /* Sadece admin sayfaları için renk düzeltmesi */
+  color: #000000 !important;
+}
+
+/* Admin sayfalarındaki gri renkli metinleri siyah yap */
+.admin-panel [class*="text-gray"], 
+[class*="admin/"] [class*="text-gray"] {
+  color: #000000 !important;
+}
+
+/* Admin sayfalarında başlıklar için */
+.admin-panel h1, .admin-panel h2, .admin-panel h3,
+[class*="admin/"] h1, [class*="admin/"] h2, [class*="admin/"] h3 {
+  color: #000000 !important;
+}
+
+/* Sidebar menüsü dışındaki metinler için */
+.admin-panel .bg-white *, [class*="admin/"] .bg-white * {
+  color: #000000 !important;
+}
